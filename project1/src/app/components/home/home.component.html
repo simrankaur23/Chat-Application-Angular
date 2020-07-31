@@ -1,0 +1,34 @@
+<div class="wrapper">
+    <div class="inner">
+        <form #sub="ngForm"  (ngSubmit)="onSubmit(sub)">
+            <h3>Chat App</h3>
+            <div class="form-row">
+                <div class="form-wrapper">
+                    <label for="">Name *</label>
+                    <input type="text" class="form-control" placeholder="Your Name" name="username" ngModel>
+                </div>
+                
+            </div>
+            
+            <div class="form-row last">
+                <div class="form-wrapper">
+                    <label for="">Choose Room *</label>
+                    <select name="" id="" class="form-control" name="room" ngModel>
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                        <option value="Angular">Angular</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Java">Java</option>
+                        <option value="Nodejs">Nodejs</option>
+                    </select>
+                    <i class="zmdi zmdi-chevron-down"></i>
+                </div>
+               
+            </div>
+            
+            <button data-text="Join Room" type="submit">
+              <a routerLink="/room" style="color: black;">Join Room</a>
+            </button>
+        </form>
+    </div>
+</div>
